@@ -3,7 +3,7 @@
 Projeto Integrador IV — UNIVESP (Bacharelado em Ciência de Dados e Engenharia da Computação).
 Painel interativo que mostra quantas crianças foram vacinadas contra o sarampo, onde houve casos e quais lugares merecem mais atenção.
 
-**Página:** https://SEU-USUARIO.github.io/dashboard-sarampo  <!-- troque pelo seu endereço -->
+**Página:** https://caioeduardotech-ui.github.io/dashboard-sarampo/  <!-- troque pelo seu endereço -->
 
 ## O que a página mostra
 Visão geral, mapa por estado, vacinação ano a ano e mês a mês, vacinação × casos, cidades com poucas crianças vacinadas (mapa e tabela), tabelas por estado e por ano, estados que merecem atenção, casos por idade e resumo em frases. Filtros: ano, região, estado e dose.
