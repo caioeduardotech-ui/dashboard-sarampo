@@ -1,0 +1,3 @@
+numpy
+openpyxl
+# Também é preciso o programa pdftotext (pacote "poppler-utils" no Linux, "poppler" no Mac/Windows).
