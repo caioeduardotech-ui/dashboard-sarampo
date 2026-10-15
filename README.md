@@ -3,7 +3,7 @@
 Projeto Integrador IV — UNIVESP (Bacharelado em Ciência de Dados e Engenharia da Computação).
 Painel interativo que mostra quantas crianças foram vacinadas contra o sarampo, onde houve casos e quais lugares merecem mais atenção.
 
-**Página:** https://caioeduardotech-ui.github.io/dashboard-sarampo/  <!-- troque pelo seu endereço -->
+**Página:** https://SEU-USUARIO.github.io/dashboard-sarampo  <!-- troque pelo seu endereço -->
 
 ## O que a página mostra
 Visão geral, mapa por estado, vacinação ano a ano e mês a mês, vacinação × casos, cidades com poucas crianças vacinadas (mapa e tabela), tabelas por estado e por ano, estados que merecem atenção, casos por idade e resumo em frases. Filtros: ano, região, estado e dose.
@@ -24,7 +24,7 @@ A planilha com todos os dados organizados está em `base-consolidada-sarampo.xls
 - **Crianças vacinadas (cobertura):** doses aplicadas ÷ crianças que deveriam ser vacinadas. Meta: 95%.
 - **Casos por 100 mil habitantes:** casos do período ÷ população do último ano × 100.000.
 - **Estados que merecem atenção:** cobertura abaixo de 95% e casos entre os 25% mais altos. É critério de triagem, não de risco.
-- **Agrupamento de estados:** k-médias (3 grupos) sobre cobertura e incidência padronizadas.
+- **Agrupamento de estados e de cidades (aprendizado de máquina):** k-médias, testando de 2 a 6 grupos e escolhendo pela nota silhouette. Estados: cobertura e incidência. Cidades: vacinação da 1ª dose de 2018 a 2025.
 
 ## Limitações
 2026 é parcial; casos por idade só para o Brasil (2020–2026); população-alvo por cidade só a partir de 2023; cobertura acima de 100% reflete a estimativa de população. A página é descritiva e não prova causa.
@@ -34,6 +34,7 @@ A planilha com todos os dados organizados está em `base-consolidada-sarampo.xls
 - `estilo.css`: aparência (cores, tabelas, modo escuro, impressão).
 - `app.js`: lógica da página (filtros, gráficos, mapas, tabelas, agrupamento de estados).
 - `dados.js`: dados usados pela página (casos, vacinação, população e malhas do IBGE).
+- `perfis.js`: perfis de cidades calculados por aprendizado de máquina (`scripts/aprendizado_maquina.py`).
 - `scripts/`: programas em Python que preparam os dados a partir dos arquivos das fontes (veja `scripts/LEIAME.md`).
 - `dados/base-consolidada-sarampo.xlsx`: os mesmos dados em planilha, com a descrição de cada aba na aba LEIA-ME.
 
